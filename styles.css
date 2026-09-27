@@ -411,6 +411,14 @@ a { color: inherit; text-underline-offset: 0.2em; }
   font-size: var(--text-sm);
 }
 
+.project__gallery { display: grid; gap: var(--space-6); }
+
+.project__img { width: 100%; aspect-ratio: 16 / 10; object-fit: contain; padding: var(--space-2); border: 1px solid var(--color-line); border-radius: var(--radius); background: #fff; transition: border-color 0.2s var(--ease); }
+
+.project__media-link { display: block; border-radius: var(--radius); }
+
+.project__media-link:hover .project__img { border-color: var(--color-accent); }
+
 .project__caption { margin-top: var(--space-2); color: var(--color-muted); font-size: var(--text-sm); }
 
 /* ==========================================================================
@@ -569,6 +577,7 @@ a { color: inherit; text-underline-offset: 0.2em; }
 
   .section__title { position: sticky; top: calc(var(--header-height) + var(--space-8)); align-self: start; }
 
+  .project__gallery { grid-template-columns: 1fr 1fr; }
   .skills__group { grid-template-columns: 8rem 1fr; align-items: baseline; gap: var(--space-4); }
 }
 
