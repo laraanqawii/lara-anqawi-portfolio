@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lara Anqawi | Full-Stack Developer</title>
+  <meta name="description" content="Lara Anqawi, full-stack developer and Computer Science graduate from Birzeit University, working across web development and applied AI/NLP.">
+  <script>
+    // Apply the saved theme before first paint so the page never flashes the wrong theme.
+    try { var saved = localStorage.getItem('theme'); if (saved) document.documentElement.dataset.theme = saved; } catch (e) {}
+    document.documentElement.classList.add('js');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo" href="#top">Lara Anqawi</a>
+
+      <div class="site-header__controls">
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="visually-hidden">Dark mode</span>
+          <svg class="theme-toggle__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+          </svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="visually-hidden">Menu</span>
+          <span class="menu-toggle__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#project">Project</a></li>
+          <li><a class="nav__link" href="#training">Training</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="button button--small nav__cv" href="[CV_PDF_PATH]" download>Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <p class="hero__meta">Full-Stack Developer, Ramallah, Palestine</p>
+        <h1 class="hero__title" id="hero-title">Lara Anqawi</h1>
+        <p class="hero__lede">I build full-stack web applications and put applied NLP to work inside them, from the Python model that reads a CV to the interface where a graduate finds a matching job.</p>
+        <div class="hero__actions">
+          <a class="button" href="#project">View Project</a>
+          <a class="button button--ghost" href="#contact">Contact me</a>
+        </div>
+        <p class="match">
+          <svg class="match__icon" viewBox="0 0 64 24" width="64" height="24" aria-hidden="true" focusable="false">
+            <rect class="match__node" x="1.5" y="3.5" width="13" height="17" rx="2"/>
+            <path class="match__line" d="M15 12h34"/>
+            <circle class="match__dot" cx="32" cy="12" r="3.5"/>
+            <rect class="match__node" x="49.5" y="5.5" width="13" height="13" rx="2"/>
+          </svg>
+          <span>CV to job matching, built for my graduation project</span>
+        </p>
+      </div>
+      <figure class="hero__portrait">
+        <img class="hero__img" src="assets/lara-anqawi.jpg" width="720" height="808" alt="Lara Anqawi smiling, standing outdoors in front of olive trees">
+      </figure>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container section__grid">
+        <h2 class="section__title" id="about-title">About</h2>
+        <div class="section__body prose reveal">
+          <p>I'm a Computer Science graduate from Birzeit University with hands-on experience in full-stack web development and applied AI/NLP. For my graduation project I worked on PalCareerLink, a platform that analyses CVs with Python NLP and matches graduates to relevant jobs. I completed the Front End Web Developer Nanodegree with Udacity in 2026, and I'm now in Birzeit University's AI Career Accelerator, focusing on practical AI and workflow automation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container section__grid">
+        <h2 class="section__title" id="skills-title">Skills</h2>
+        <dl class="skills section__body reveal">
+          <div class="skills__group">
+            <dt class="skills__label">Languages</dt>
+            <dd class="skills__items"><ul class="tags"><li class="tag">Python</li><li class="tag">Java</li><li class="tag">JavaScript</li><li class="tag">HTML/CSS</li></ul></dd>
+          </div>
+          <div class="skills__group">
+            <dt class="skills__label">Web</dt>
+            <dd class="skills__items"><ul class="tags"><li class="tag">Responsive front-end design</li><li class="tag">Git</li></ul></dd>
+          </div>
+          <div class="skills__group">
+            <dt class="skills__label">AI/NLP</dt>
+            <dd class="skills__items"><ul class="tags"><li class="tag">spaCy</li><li class="tag">scikit-learn</li></ul></dd>
+          </div>
+          <div class="skills__group">
+            <dt class="skills__label">Tools</dt>
+            <dd class="skills__items"><ul class="tags"><li class="tag">Supabase</li><li class="tag">Git</li><li class="tag">Figma</li><li class="tag">Microsoft Office</li></ul></dd>
+          </div>
+          <div class="skills__group">
+            <dt class="skills__label">Soft</dt>
+            <dd class="skills__items"><ul class="tags"><li class="tag">Clear technical communication</li><li class="tag">Teamwork</li><li class="tag">Problem-solving under pressure</li><li class="tag">Adaptability</li><li class="tag">Detail-oriented</li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="project" aria-labelledby="project-title">
+      <div class="container section__grid">
+        <h2 class="section__title" id="project-title">Project</h2>
+        <article class="project section__body reveal" aria-labelledby="project-name">
+          <header class="project__header">
+            <p class="project__kicker">Graduation project</p>
+            <h3 class="project__name" id="project-name">PalCareerLink</h3>
+            <p class="project__intro">PalCareerLink reads a graduate's CV, analyses it with spaCy and scikit-learn, and matches the candidate to relevant job postings. Companies post openings and screen applicants with qualification exams they design themselves.</p>
+            <p class="match match--small">
+              <svg class="match__icon" viewBox="0 0 64 24" width="64" height="24" aria-hidden="true" focusable="false">
+                <rect class="match__node" x="1.5" y="3.5" width="13" height="17" rx="2"/>
+                <path class="match__line" d="M15 12h34"/>
+                <circle class="match__dot" cx="32" cy="12" r="3.5"/>
+                <rect class="match__node" x="49.5" y="5.5" width="13" height="13" rx="2"/>
+              </svg>
+              <span>Candidate profile matched to job posting</span>
+            </p>
+          </header>
+
+          <div class="project__block">
+            <h4 class="project__heading">Problem</h4>
+            <p>Graduates entering the job market and the companies hiring them need a way to find each other.</p>
+          </div>
+
+          <div class="project__block">
+            <h4 class="project__heading">Solution</h4>
+            <p>An AI-powered career-matching platform. NLP in Python analyses each CV and matches candidates to jobs, inside a web app that serves both applicants and companies.</p>
+          </div>
+
+          <div class="project__block">
+            <h4 class="project__heading">My role and features</h4>
+            <ul class="project__list">
+              <li>CV analysis and candidate-to-job matching in Python with spaCy and scikit-learn</li>
+              <li>Front end in JavaScript and HTML</li>
+              <li>Applicants create profiles, apply for jobs, and filter opportunities</li>
+              <li>Companies post jobs and design custom qualification exams</li>
+              <li>Supabase for the database, documentation, and file storage</li>
+            </ul>
+          </div>
+
+          <div class="project__block">
+            <h4 class="project__heading">Tech</h4>
+            <ul class="tags">
+              <li class="tag tag--accent">Python</li><li class="tag tag--accent">spaCy</li><li class="tag tag--accent">scikit-learn</li>
+              <li class="tag tag--accent">JavaScript</li><li class="tag tag--accent">HTML</li><li class="tag tag--accent">Supabase</li>
+            </ul>
+          </div>
+
+          <p class="project__grade"><span class="project__grade-value">85/100</span> graduation project grade</p>
+
+          <ul class="project__links">
+            <li><a class="button button--ghost" href="[GITHUB_REPO_URL]">View code on GitHub</a></li>
+            <li><a class="button button--ghost" href="[LIVE_DEMO_URL]">Open live demo</a></li>
+          </ul>
+
+          <figure class="project__media">
+            <!-- Replace this placeholder with:
+                 <img src="[PROJECT_SCREENSHOT]" alt="PalCareerLink job recommendations screen" width="1200" height="750"> -->
+            <div class="project__placeholder">[PROJECT_SCREENSHOT]</div>
+            <figcaption class="project__caption">PalCareerLink interface</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="training" aria-labelledby="training-title">
+      <div class="container section__grid">
+        <h2 class="section__title" id="training-title">Training and education</h2>
+        <div class="section__body">
+          <ol class="timeline reveal">
+            <li class="timeline__item timeline__item--current">
+              <p class="timeline__date">Since Aug 2026 <span class="badge">In progress</span></p>
+              <h3 class="timeline__title">AI Career Accelerator</h3>
+              <p class="timeline__org">Birzeit University Center for Continuing Education</p>
+              <p class="timeline__desc">120 hours on practical AI, responsible AI, workflow automation, and business and data-analysis use cases. Supervised capstone in progress.</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">Feb to Jul 2026, completed</p>
+              <h3 class="timeline__title">Front End Web Developer Nanodegree</h3>
+              <p class="timeline__org">Palestine Launchpad with Google, Udacity</p>
+              <p class="timeline__desc">Responsive design, accessibility, SCSS/BEM, and modern JavaScript.</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">Aug 2025</p>
+              <h3 class="timeline__title">B.Sc. Computer Science</h3>
+              <p class="timeline__org">Birzeit University</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">2025, completed</p>
+              <h3 class="timeline__title">Deep Dive LLM Bootcamp</h3>
+              <p class="timeline__org">zakey.tech</p>
+              <p class="timeline__desc">Building and deploying AI agents with LLMs, and applied NLP.</p>
+            </li>
+          </ol>
+
+          <h3 class="section__subtitle">Languages</h3>
+          <ul class="langs">
+            <li class="langs__item"><span class="langs__name">Arabic</span> Native</li>
+            <li class="langs__item"><span class="langs__name">English</span> Professional working proficiency</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="contact__title" id="contact-title">Contact</h2>
+        <p class="contact__lede">I'm open to full-stack and front-end developer roles. Email is the quickest way to reach me.</p>
+        <ul class="contact__list">
+          <li><a class="contact__link" href="mailto:laraanqawii@gmail.com"><span>Email</span><span class="contact__value">laraanqawii@gmail.com</span></a></li>
+          <li><a class="contact__link" href="[LINKEDIN_URL]" rel="noopener"><span>LinkedIn</span><span class="contact__value">[LINKEDIN_URL]</span></a></li>
+          <li><a class="contact__link" href="[GITHUB_URL]" rel="noopener"><span>GitHub</span><span class="contact__value">[GITHUB_URL]</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>Lara Anqawi</p>
+      <p>&copy; <span data-year>2026</span></p>
+    </div>
+  </footer>
+</body>
+</html>
